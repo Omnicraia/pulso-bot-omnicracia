@@ -50,10 +50,12 @@ def norm(s: str) -> str:
     return s
 
 def confirm_kb(button_text="💜 Hoy confirmo"):
+    # Primero la conexión íntima 1:1 (CONFIRMO + dudas con Omnia).
+    # El Canal NO se empuja aquí: el bot invita al Canal solo cuando ya hay
+    # compromiso probado (ver hitos de racha en content.racha_message).
     return InlineKeyboardMarkup([
         [InlineKeyboardButton(button_text, callback_data="confirm")],
-        [InlineKeyboardButton("💬 Pregúntale a Omnia", url=C.LINKS["omnia_bot"]),
-         InlineKeyboardButton("📣 El Canal", url=C.LINKS["canal"])],
+        [InlineKeyboardButton("💬 Pregúntale a Omnia", url=C.LINKS["omnia_bot"])],
     ])
 
 async def send_md(bot, chat_id, text, reply_markup=None):
