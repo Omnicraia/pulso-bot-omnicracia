@@ -210,15 +210,15 @@ def racha_message(racha: int) -> str:
     if racha == 3:
         hito = "\n\n✨ 3 días seguidos. Ya tomó forma el hábito. No pares."
     elif racha == 7:
-        # Primera invitación al Canal: ya hay compromiso probado (una semana firme).
+        # Primera invitación al Canal (de Telegram): ya hay compromiso probado (una semana firme).
         hito = ("\n\n🏅 ¡Una semana sin fallar! Ya eres columna del movimiento.\n"
-                "Ya estás list@ para el siguiente paso: entra al *Canal de Omnicracia* "
-                "y siente la ola completa, ahora sí con determinación 👉 " + LINKS["canal"])
+                "Ya estás list@ para el siguiente paso: entra al *Canal de Omnicracia en Telegram* "
+                "y siente la ola completa, ahora sí con determinación 👉 " + LINKS["telegram_canal"])
     elif racha == 14:
         hito = "\n\n⚡ 14 días. Eres de los que no se apagan. Imparable."
     elif racha == 30:
         hito = ("\n\n👑 30 días. Eres imparable. Ahora ayuda a otro a empezar su racha.\n"
-                "Y si aún no estás en el *Canal de Omnicracia*, este es tu momento 👉 " + LINKS["canal"])
+                "Y si aún no estás en el *Canal de Omnicracia en Telegram*, este es tu momento 👉 " + LINKS["telegram_canal"])
     elif racha > 30 and racha % 30 == 0:
         hito = f"\n\n👑 {racha} días. Leyenda viva del movimiento."
     cierre = "\n\nNos vemos mañana. No la rompas. 🔥"
