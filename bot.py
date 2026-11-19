@@ -82,7 +82,7 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     source = ctx.args[0] if ctx.args else None            # t.me/bot?start=ORIGEN
     db.add_or_touch_user(u.id, u.full_name, u.username, source)
     await send_md(ctx.bot, u.id, C.ONBOARDING["t1_welcome"],
-                  reply_markup=confirm_kb("💜 CONFIRMO y arranco mi racha"))
+                  reply_markup=confirm_kb("💜 Confirmo mi compromiso diario"))
 
 
 # ----------------------------------------------------------------- Botón CONFIRMO (y texto CONFIRMO)
